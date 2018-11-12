@@ -10,13 +10,10 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
 import com.tout.tout.entities.urban.MyResponse;
 import com.tout.tout.entities.urban.Note;
 import com.tout.tout.network.NetworkModule;
-
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
