@@ -38,11 +38,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.settings) {
-            return true;
+        if (item.getItemId() == R.id.settings) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
         }
-        return super.onOptionsItemSelected(item);
+        return true;
     }
 
     private void setRecyclerView() {

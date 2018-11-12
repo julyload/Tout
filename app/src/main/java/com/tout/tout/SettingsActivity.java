@@ -3,6 +3,8 @@ package com.tout.tout;
 import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -24,18 +26,19 @@ public class SettingsActivity extends AppCompatActivity {
 // }
 // });
 
-        //Button changeLang = findViewById(R.id.changeLang);
-        final CharSequence[] items = {"Русский", "English"};//имена методов Ваших в списке
-        AlertDialog.Builder builder = new AlertDialog.Builder(SettingsActivity.this);
-        builder.setItems(items, (dialog, item) -> {
-            if (item == 0) { //"Русский"
-//method
-            }
-            if (item == 1) { //"English"
-//method
-            }
+        Button changeLang = findViewById(R.id.changeLang);
+        changeLang.setOnClickListener(v -> {
+            final CharSequence[] items = {"Русский", "English"};//имена методов Ваших в списке
+            AlertDialog.Builder builder = new AlertDialog.Builder(SettingsActivity.this);
+            builder.setItems(items, (dialog, item) -> {
+                if (item == 0) {
+                }
+                if (item == 1) {
+                }
+            });
+            AlertDialog alert = builder.create();
+            alert.show();
         });
-        AlertDialog alert = builder.create();
-        alert.show();
+
     }
 }
