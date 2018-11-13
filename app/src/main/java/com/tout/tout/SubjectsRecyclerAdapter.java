@@ -17,8 +17,6 @@ import java.util.List;
 public class SubjectsRecyclerAdapter extends RecyclerView.Adapter<SubjectsRecyclerAdapter.ViewHolder> {
     @NonNull
     private final List<Subject> subjects;
-    @NonNull
-    private final Context context;
     private final LayoutInflater inflater;
     @Nullable
     private final OnItemClickListener clickListener;
@@ -26,7 +24,6 @@ public class SubjectsRecyclerAdapter extends RecyclerView.Adapter<SubjectsRecycl
     public SubjectsRecyclerAdapter(@NonNull Context context, @NonNull List<Subject> subjects,
                                    @Nullable OnItemClickListener clickListener) {
         this.subjects = subjects;
-        this.context = context;
         this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         this.clickListener = clickListener;
     }

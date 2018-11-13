@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 public class SettingsActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
 
-    TextView frequency;
+    private TextView frequency;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +25,15 @@ public class SettingsActivity extends AppCompatActivity implements SeekBar.OnSee
             AlertDialog.Builder builder = new AlertDialog.Builder(SettingsActivity.this);
             builder.setItems(items, (dialog, item) -> {
                 if (item == 0) {
+
                 }
                 if (item == 1) {
+
                 }
             });
             AlertDialog alert = builder.create();
             alert.show();
         });
-
     }
 
     @Override

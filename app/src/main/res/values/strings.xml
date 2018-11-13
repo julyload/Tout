@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Tout</string>
     <string name="change_language">Change language</string>
-    <string name="choose_language">Choose language</string>
     <string name="change_the_frequency_of_notifications">Change the frequency of notifications</string>
     <string name="per_hour">per hour</string>
     <string name="_1">1</string>
