@@ -6,11 +6,5 @@
     <item
         android:id="@+id/settings"
         android:title="@string/settings" />
-    <item
-        android:id="@+id/settings1"
-        android:title="@string/settings" />
-    <item
-        android:id="@+id/settings2"
-        android:title="@string/settings" />
 
 </menu>

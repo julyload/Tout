@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <!--android:background="@color/mainBackground"-->
 
     <include
         android:id="@+id/toolbar"
@@ -19,5 +19,6 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         tools:context=".MainActivity"
         tools:listitem="@layout/list_item_subject" />
+
 
 </android.support.constraint.ConstraintLayout>
