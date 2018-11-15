@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private final SubjectsRecyclerAdapter.OnItemClickListener clickListener = position -> {
-        Subject subject = subjectAdapter.getItem(position);
+        //Subject subject = subjectAdapter.getItem(position);
         Intent actorInfoIntent = new Intent(this, UrbanRecyclerActivity.class);
         startActivity(actorInfoIntent);
     };

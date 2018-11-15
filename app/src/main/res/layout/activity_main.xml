@@ -20,5 +20,4 @@
         tools:context=".MainActivity"
         tools:listitem="@layout/list_item_subject" />
 
-
 </android.support.constraint.ConstraintLayout>
