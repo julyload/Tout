@@ -10,11 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.tout.tout.entities.subjects.DataUtil;
-import com.tout.tout.entities.subjects.Subject;
 
 public class MainActivity extends AppCompatActivity {
-
-    private SubjectsRecyclerAdapter subjectAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setRecyclerView() {
         RecyclerView list = findViewById(R.id.subject_recycler);
-        subjectAdapter = new SubjectsRecyclerAdapter(this, DataUtil.generateSubjects(), clickListener);
+        SubjectsRecyclerAdapter subjectAdapter = new SubjectsRecyclerAdapter(this, DataUtil.generateSubjects(), clickListener);
         list.setLayoutManager(new LinearLayoutManager(this));
         list.setAdapter(subjectAdapter);
     }

@@ -36,7 +36,7 @@ public class UrbanRecyclerActivity extends AppCompatActivity {
 
         callUrbanData();
 
-        scheduleNotification(getNotification("5 second delay"), 250);
+        scheduleNotification(getNotification());
     }
 
     //public Note getItem(int position) {return notes.get(position);}
@@ -68,7 +68,7 @@ public class UrbanRecyclerActivity extends AppCompatActivity {
         recyclerView.setAdapter(urbanAdapter);
     }
 
-    private void scheduleNotification(Notification notification, int delay) {
+    private void scheduleNotification(Notification notification) {
 
         Intent notificationIntent = new Intent(this, NotificationPublisher.class);
         notificationIntent.putExtra(NotificationPublisher.NOTIFICATION_ID, 1);
@@ -82,7 +82,7 @@ public class UrbanRecyclerActivity extends AppCompatActivity {
         }
     }
 
-    private Notification getNotification(String content) {
+    private Notification getNotification() {
         Notification.Builder builder = new Notification.Builder(this)
                 .setContentTitle("ROFL")
                 .setContentText("ROFL is an internet accronmym for Rolling On Floor Laughing, an")

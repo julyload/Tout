@@ -11,6 +11,7 @@
         android:id="@+id/changeLang"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="60dp"
         android:text="@string/change_language" />
 
@@ -48,13 +49,5 @@
         android:layout_marginTop="170dp"
         android:text="@string/per_hour"
         android:textSize="18sp" />
-
-    <ImageButton
-        android:layout_width="350dp"
-        android:layout_height="131dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="171dp"
-        android:src="@drawable/urban_dictionary_logo" />
 
 </RelativeLayout>

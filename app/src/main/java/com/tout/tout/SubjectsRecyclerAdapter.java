@@ -41,9 +41,9 @@ public class SubjectsRecyclerAdapter extends RecyclerView.Adapter<SubjectsRecycl
         holder.info.setText(actor.getSubjectInfo());
     }
 
-    public Subject getItem(int position) {
-        return subjects.get(position);
-    }
+   // public Subject getItem(int position) {
+    //    return subjects.get(position);
+    //}
 
     @Override
     public int getItemCount() {
@@ -73,4 +73,3 @@ public class SubjectsRecyclerAdapter extends RecyclerView.Adapter<SubjectsRecycl
         }
     }
 }
-

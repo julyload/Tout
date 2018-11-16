@@ -16,7 +16,6 @@ public class DataUtil {
                 "Learn new words and improve your vocabulary "));
         subjects.add(new Subject("Lexigram",
                 "Medical terminology"));
-
         return subjects;
     }
 }

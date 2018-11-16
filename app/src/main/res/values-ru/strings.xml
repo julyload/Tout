@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tout</string>
+    <string name="change_language">Выберите язык</string>
+    <string name="change_the_frequency_of_notifications">Изменить частоту уведомлений</string>
+    <string name="per_hour">в час</string>
+    <string name="_1">1</string>
+    <string name="settings">Настройки</string>
+</resources>

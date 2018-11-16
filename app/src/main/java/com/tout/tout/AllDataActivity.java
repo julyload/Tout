@@ -14,7 +14,7 @@ public class AllDataActivity extends AppCompatActivity {
         final String WORD = "word";
         final String DEF = "def";
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_all_data);
+        setContentView(R.layout.activity_full_info);
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
