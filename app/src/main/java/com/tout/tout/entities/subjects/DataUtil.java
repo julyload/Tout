@@ -1,21 +1,25 @@
 package com.tout.tout.entities.subjects;
 
+import com.tout.tout.App;
+import com.tout.tout.R;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class DataUtil {
     public static List<Subject> generateSubjects() {
+
         List<Subject> subjects = new ArrayList<>();
-        subjects.add(new Subject("Wikipedia",
-                "Free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation"));
-        subjects.add(new Subject("Oxford Dictionaries",
-                "Dedicated to improving communication through an understanding of, and a passion for, language from around the globe"));
-        subjects.add(new Subject("Urban Dictionary",
-                "Crowdsourced online dictionary for slang words and phrases"));
-        subjects.add(new Subject("Languages",
-                "Learn new words and improve your vocabulary "));
-        subjects.add(new Subject("Lexigram",
-                "Medical terminology"));
+        subjects.add(new Subject(App.getContext().getResources().getString(R.string.wikipedia),
+                App.getContext().getResources().getString(R.string.wikipedia_description)));
+        subjects.add(new Subject(App.getContext().getResources().getString(R.string.ox_dict),
+                App.getContext().getResources().getString(R.string.ox_dict_description)));
+        subjects.add(new Subject(App.getContext().getResources().getString(R.string.urban_dict),
+                App.getContext().getResources().getString(R.string.urban_dict_description)));
+        subjects.add(new Subject(App.getContext().getResources().getString(R.string.languages),
+                App.getContext().getResources().getString(R.string.languages_description)));
+        subjects.add(new Subject(App.getContext().getResources().getString(R.string.lexigram),
+                App.getContext().getResources().getString(R.string.lexigram_description)));
         return subjects;
     }
 }

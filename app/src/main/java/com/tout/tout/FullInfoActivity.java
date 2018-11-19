@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import java.util.Objects;
 
-public class AllDataActivity extends AppCompatActivity {
+public class FullInfoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,15 +15,15 @@ public class AllDataActivity extends AppCompatActivity {
         final String DEF = "def";
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_full_info);
+        TextView all = findViewById(R.id.word);
+        TextView def = findViewById(R.id.definition);
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-
         String actorBio = Objects.requireNonNull(bundle).getString(WORD);
-        String actorName = bundle.getString(DEF);
-        TextView all = findViewById(R.id.allDataName);
-        TextView def = findViewById(R.id.definition);
+        String word = bundle.getString(DEF);
+
         all.setText(actorBio);
-        def.setText(actorName);
+        def.setText(word);
     }
 }

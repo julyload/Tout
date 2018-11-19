@@ -1,7 +1,9 @@
 package com.tout.tout.network;
 
 import android.util.Log;
+
 import java.util.concurrent.TimeUnit;
+
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -13,9 +15,9 @@ public class NetworkModule {
 
     public NetworkModule() {
         final HttpLoggingInterceptor.Logger logger = message -> Log.e("OkHttp", message);
-        final HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(logger) //
+        final HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(logger)
                 .setLevel(HttpLoggingInterceptor.Level.HEADERS);
-        final OkHttpClient client = new OkHttpClient.Builder() //
+        final OkHttpClient client = new OkHttpClient.Builder()
                 .connectTimeout(15, TimeUnit.SECONDS)
                 .readTimeout(30, TimeUnit.SECONDS)
                 .writeTimeout(30, TimeUnit.SECONDS)

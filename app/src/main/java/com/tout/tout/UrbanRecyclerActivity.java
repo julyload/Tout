@@ -94,7 +94,7 @@ public class UrbanRecyclerActivity extends AppCompatActivity {
 
     private final UrbanRecyclerAdapter.OnItemClickListener clickListener = position -> {
         Note subject = urbanAdapter.getItem(position);
-        Intent actorInfoIntent = new Intent(this, AllDataActivity.class);
+        Intent actorInfoIntent = new Intent(this, FullInfoActivity.class);
         actorInfoIntent.putExtra(WORD, subject.getWord());
         actorInfoIntent.putExtra(DEF, subject.getDefinition());
         startActivity(actorInfoIntent);

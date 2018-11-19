@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         setRecyclerView();
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        //initToolbar();
     }
 
     @Override
@@ -39,25 +38,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-/*
-    private void initToolbar() {
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setOnMenuItemClickListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.settings:
-                    Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-                    startActivity(intent);
-                    return true;
-                case R.id.settings1:
-                    Toast.makeText(MainActivity.this, "toast", Toast.LENGTH_LONG).show();
-                    return true;
-            }
-            return false;
-        });
-        toolbar.inflateMenu(R.menu.menu);
-    }
-*/
 
     private void setRecyclerView() {
         RecyclerView list = findViewById(R.id.subject_recycler);

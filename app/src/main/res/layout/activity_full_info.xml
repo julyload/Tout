@@ -11,7 +11,7 @@
         android:padding="50dp">
 
         <TextView
-            android:id="@+id/allDataName"
+            android:id="@+id/word"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -19,7 +19,7 @@
             android:textAllCaps="true"
             android:textColor="@color/textColor"
             android:textSize="30sp"
-            tools:text="Name" />
+            tools:text="Word" />
 
         <TextView
             android:id="@+id/definition"
@@ -28,7 +28,7 @@
             android:layout_gravity="center"
             android:textColor="@color/infoColor"
             android:textSize="16sp"
-            tools:text="Info" />
+            tools:text="Definition" />
 
     </LinearLayout>
 

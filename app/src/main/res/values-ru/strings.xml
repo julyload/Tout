@@ -5,4 +5,14 @@
     <string name="per_hour">в час</string>
     <string name="_1">1</string>
     <string name="settings">Настройки</string>
+    <string name="wikipedia">Википедия</string>
+    <string name="wikipedia_description">Общедоступная многоязычная универсальная интернет-энциклопедия со свободным контентом, реализованная на принципах вики</string>
+    <string name="ox_dict">Оксфордский словарь</string>
+    <string name="ox_dict_description">Один из наиболее известных и крупных академических словарей английского языка издательского дома «Oxford University Press»</string>
+    <string name="urban_dict">Urban Dictionary</string>
+    <string name="urban_dict_description">Онлайн-словарь сленговых слов и фраз</string>
+    <string name="languages">Языки</string>
+    <string name="languages_description">Изучение новых слов и улучшение своего словарного запаса</string>
+    <string name="lexigram">Lexigram</string>
+    <string name="lexigram_description">Медицинская терминология</string>
 </resources>

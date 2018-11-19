@@ -1,10 +1,8 @@
 package com.tout.tout;
 
-import android.app.AlertDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.SeekBar;
-import android.widget.Button;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 
@@ -24,7 +22,8 @@ public class SettingsActivity extends AppCompatActivity implements SeekBar.OnSee
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-
+    }
+        /*
         Button changeLang = findViewById(R.id.changeLang);
         changeLang.setOnClickListener(v -> {
             final CharSequence[] items = {"Русский", "English"}; //имена методов Ваших в списке
@@ -40,7 +39,7 @@ public class SettingsActivity extends AppCompatActivity implements SeekBar.OnSee
             AlertDialog alert = builder.create();
             alert.show();
         });
-    }
+        */
 
     @Override
     public boolean onSupportNavigateUp() {

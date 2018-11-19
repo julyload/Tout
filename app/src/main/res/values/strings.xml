@@ -5,4 +5,14 @@
     <string name="per_hour">per hour</string>
     <string name="_1">1</string>
     <string name="settings">Settings</string>
+    <string name="wikipedia">Wikipedia</string>
+    <string name="wikipedia_description">Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation</string>
+    <string name="ox_dict">Oxford dictionary</string>
+    <string name="ox_dict_description">Dedicated to improving communication through an understanding of, and a passion for, language from around the globe</string>
+    <string name="urban_dict">Urban Dictionary</string>
+    <string name="urban_dict_description">Crowdsourced online dictionary for slang words and phrases</string>
+    <string name="languages">Languages</string>
+    <string name="languages_description">Learn new words and improve your vocabulary</string>
+    <string name="lexigram">Lexigram</string>
+    <string name="lexigram_description">Medical terminology</string>
 </resources>

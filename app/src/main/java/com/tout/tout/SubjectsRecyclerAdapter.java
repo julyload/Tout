@@ -41,7 +41,7 @@ public class SubjectsRecyclerAdapter extends RecyclerView.Adapter<SubjectsRecycl
         holder.info.setText(actor.getSubjectInfo());
     }
 
-   // public Subject getItem(int position) {
+    //public Subject getItem(int position) {
     //    return subjects.get(position);
     //}
 

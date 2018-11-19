@@ -7,8 +7,8 @@ public class Note {
     @SerializedName("definition")
     private String definition;
 
-    @SerializedName("permalink")
-    private String permalink;
+    //@SerializedName("permalink")
+    //private String permalink;
 
     @SerializedName("word")
     private String word;
