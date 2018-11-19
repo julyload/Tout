@@ -69,7 +69,6 @@ public class UrbanRecyclerActivity extends AppCompatActivity {
     }
 
     private void scheduleNotification(Notification notification) {
-
         Intent notificationIntent = new Intent(this, NotificationPublisher.class);
         notificationIntent.putExtra(NotificationPublisher.NOTIFICATION_ID, 1);
         notificationIntent.putExtra(NotificationPublisher.NOTIFICATION, notification);
@@ -78,7 +77,7 @@ public class UrbanRecyclerActivity extends AppCompatActivity {
         //long futureInMillis = SystemClock.elapsedRealtime() + delay;
         AlarmManager alarmManager = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
         if (alarmManager != null) {
-            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 2 * 100, pendingIntent);
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), 60000, pendingIntent);
         }
     }
 
@@ -86,7 +85,7 @@ public class UrbanRecyclerActivity extends AppCompatActivity {
         Notification.Builder builder = new Notification.Builder(this)
                 .setContentTitle("ROFL")
                 .setContentText("ROFL is an internet accronmym for Rolling On Floor Laughing, an")
-                .setSmallIcon(R.mipmap.ic_launcher_round)
+                .setSmallIcon(R.drawable.tout_logo3)
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setPriority(Notification.PRIORITY_HIGH);
         return builder.build();
