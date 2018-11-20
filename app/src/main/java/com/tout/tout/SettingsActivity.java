@@ -6,6 +6,8 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.support.v7.widget.Toolbar;
 
+import java.util.Objects;
+
 public class SettingsActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener {
 
     private TextView frequency;
@@ -20,8 +22,8 @@ public class SettingsActivity extends AppCompatActivity implements SeekBar.OnSee
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
         /*
         Button changeLang = findViewById(R.id.changeLang);
