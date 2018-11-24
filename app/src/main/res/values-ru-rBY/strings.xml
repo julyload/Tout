@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tout</string>
+    <string name="change_language">Выберыце мову</string>
+    <string name="change_the_frequency_of_notifications">Змяніць частату апавяшчэнняў</string>
+    <string name="per_hour">у гадзіну</string>
+    <string name="_1">1</string>
+    <string name="settings">Налады</string>
+    <string name="wikipedia">Вікіпедыя</string>
+    <string name="wikipedia_description">Агульнадаступная шматмоўная універсальная інтэрнэт-энцыклапедыя са свабодным кантэнтам, рэалізаваная на прынцыпах вікі</string>
+    <string name="ox_dict">Оксфардскі слоўнік</string>
+    <string name="ox_dict_description">Адзін з найбольш вядомых і буйных акадэмічных слоўнікаў англійскай мовы выдавецкага дома «Oxford University Press»</string>
+    <string name="urban_dict">Urban Dictionary</string>
+    <string name="urban_dict_description">Онлайн-слоўнік слэнгавых слоў і фраз</string>
+    <string name="languages">Мовы</string>
+    <string name="languages_description">Вывучэнне новых слоў і паляпшэнне свайго слоўнікавага запасу</string>
+    <string name="lexigram">Lexigram</string>
+    <string name="lexigram_description">Медыцынская тэрміналогія</string>
+</resources>
